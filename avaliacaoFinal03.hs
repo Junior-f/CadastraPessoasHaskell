@@ -1,14 +1,12 @@
 
 type Cadastro = [Pessoa]
 
--- struct pessoa 
 data Pessoa = Pessoa
   { nome :: String
    ,idade :: Int
    ,endereco :: Endereco
   } deriving (Show, Eq)
 
-  -- struct endereco
 data Endereco = Endereco
   { rua :: String
    ,casa :: Int
