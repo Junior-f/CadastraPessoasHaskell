@@ -27,9 +27,9 @@ ordenar (x : xs) = ordenar [e|e<-xs, nome e < nome x] ++ [x] ++ ordenar [e|e<-xs
 inserirPessoa :: Cadastro -> IO Cadastro
 inserirPessoa cadastro = do
   putStrLn "\n-------INSERIR PESSOA-------"
-  putStrLn "Digite o nome"
+  putStrLn "Digite o nome da pessoa"
   nome <- getLine
-  putStrLn "Digite a idade"
+  putStrLn "Digite a idade da pessoa"
   idade <- getLine
   putStrLn "Digite nome da rua"
   rua <- getLine
