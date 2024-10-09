@@ -81,7 +81,7 @@ atualizarPessoa cadastro pessoa = busca cadastro pessoa
 
 atualizarDados :: Cadastro -> IO Cadastro
 atualizarDados cadastro = do
-  putStrLn "\n-------ATUALIZAR DADOS PESSOA-------"
+  putStrLn "\n-------ATUALIZAR DADOS DA PESSOA-------"
   putStrLn "Digite o nome"
   nome <- getLine
   putStrLn "Digite a idade"
@@ -114,7 +114,7 @@ relatorio :: Cadastro -> IO ()
 relatorio [] = do putStrLn "\nCADASTRO VAZIO"
 relatorio lista = do
   putStrLn "\n-------TOTAL PESSOAS CIDADE-------"
-  putStrLn "Digite a cidade"
+  putStrLn "Digite a cidade da pessoa"
   cidadeP <- getLine
   print (contarPessoas lista cidadeP)
 
