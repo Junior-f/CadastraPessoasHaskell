@@ -31,15 +31,15 @@ inserirPessoa cadastro = do
   nome <- getLine
   putStrLn "Digite a idade da pessoa"
   idade <- getLine
-  putStrLn "Digite nome da rua"
+  putStrLn "Digite nome da rua da pessoa"
   rua <- getLine
-  putStrLn "Digite o numero da casa"
+  putStrLn "Digite o numero da casa da pessoa"
   casa <- getLine
-  putStrLn "Digite a cidade"
+  putStrLn "Digite a cidade da pessoa"
   cidade <- getLine
   let pessoa = Pessoa nome (read idade :: Int) (Endereco rua (read casa :: Int) cidade)
   let pessoaOrdenada = ordenar(pessoa : cadastro)
-  putStrLn "Pessoa Cadastrada"
+  putStrLn " Pessoa Cadastrada com Sucesso"
   return pessoaOrdenada
 
 
